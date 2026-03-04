@@ -12,17 +12,16 @@
 '''
 
 grade: int = int(input("Enter a grade"))
-if grade > 199 and grade < 0:
+if grade > 100 or grade < 0:
     print("invalid")
-elif grade >= 80 and grade <= 100:
+elif grade >= 80 :
     print("VERY GOOD")
-elif grade >= 60 and grade <80:
+elif grade >= 60 :
     print("NOT BAD")
-elif grade >=40 and grade <60:
-    print("BAD")
-elif grade >=0 and grade <= 40:
-    print("REALLY BAD")
+elif grade >=40 :
+    print("TRY HARDER")
+
 else:
-    print("invalid grade")
+    print("NEED MORE EXERCISE")
 
 

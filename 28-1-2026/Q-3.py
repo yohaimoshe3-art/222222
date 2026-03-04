@@ -1,19 +1,21 @@
+valid_players = 0
+above_16 = 0
 
-#START
-i=0
-good = 0
-over_16 = 0
-while (i <= 10):
-     age = int(input("Enter age"))
-     i = i+1
-     if age > 18:
+for i in range(10):
+    age = int(input("הכנס גיל שחקן: "))
+
+    if age < 12:
+        continue
+
+    if age > 18:
+        print("שחקן מבוגר מדי – עצירת הקליטה")
         break
-     if age > 16:
-         over_16 = over_16 + 1
-     if age <= 18 and age >=12:
-        good = good+1
-print("גילאים תקינים", good)
 
-print("מעל גיל 16", over_16)
-#START
+    valid_players += 1
+
+    if age > 16:
+        above_16 += 1
+
+print("מספר שחקנים תקינים:", valid_players)
+print("מספר שחקנים מעל גיל 16:", above_16)
 

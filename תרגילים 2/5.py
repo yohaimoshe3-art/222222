@@ -8,7 +8,7 @@ PURPLE_BOLD = "\033[1;35m"
 ORANGE_BOLD = "\033[0;33m"
 print(f"{YELLOW_BOLD}=" * 50)
 print(f"{RED_BOLD}welcome to the game".center(50))
-print(f"{BLUE_BOLD}Yohai moshe the king".center(50))
+print(f"{BLUE_BOLD}Zohar the queen and Yohai moshe the king".center(50))
 print(f"{YELLOW_BOLD}=" * 50)
 incorrect_member = 0
 score_member = 0
@@ -94,7 +94,7 @@ if level_game == "easy" :
     print(" " * 50)
     print("your incorrect answers is....")
     time.sleep(1)
-    print(f'{incorrect_member}" " 🤒')
+    print(f'{incorrect_member} 🤒')
 
 else:
     score_user = 0
