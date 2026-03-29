@@ -1,8 +1,3 @@
-# last_name : str = input("Enter your last name: ")
-# first_name : str = input("Enter your first name: ")
-# country_name : str = input("Enter your country name: ")
-# city_name : str = input("Enter your city address: ")
-# zip_code = int(input("Enter your zip code: "))
 
 while True:
     last_name = input("Enter your last name with upper-case letters: ")
@@ -17,20 +12,20 @@ while True:
     print("try again")
 while True:
     country_name = input("your country length name must be at most 3 letters: ")
-    if len(country_name) < 3 and country_name.isalpha():
+    if len(country_name) < 4 and country_name.isalpha():
         break
     print("try again")
 while True:
     zip_code: str = (input("Enter your zip code: "))
 
-    if zip_code.isdigit() and len(zip_code) <= 4:
+    if zip_code.isdigit() and len(zip_code) >= 4:
 
 
         break
     print("try again")
 city_name : str = input("Enter your city address: ")
 print("*" * 50)
-print(f''' FOR: {last_name}, {first_name}
+print(f'''FOR: {last_name}, {first_name}
 COUNTRY: {country_name}
 ADDRESS: {city_name}
 ZIPCODE: {zip_code}''')

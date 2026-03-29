@@ -1,19 +1,11 @@
 import random
-
-print("🃏 Welcome to 21 Boom 🃏")
-
 cards_deck = [1,2,3,4,5,6,7,8,9,10,"J","Q","K","A"]
 
-# =====================
-# PLAYER 1
-# =====================
 print("\n🧍 Player 1 turn")
 
 p1_cards = []
 p1_total = 0
 p1_disqualified = False
-
-# Two starting cards
 for i in range(2):
     card = random.choice(cards_deck)
 
@@ -27,7 +19,7 @@ for i in range(2):
     p1_cards.append(card)
     p1_total += value
 
-# Player 1 turn loop
+
 while True:
     print("Player 1 cards:", p1_cards)
     print("Total:", p1_total)
@@ -59,17 +51,11 @@ while True:
     p1_cards.append(card)
     p1_total += value
 
-
-# =====================
-# PLAYER 2
-# =====================
 print("\n🧍 Player 2 turn")
 
 p2_cards = []
 p2_total = 0
 p2_disqualified = False
-
-# Two starting cards
 for i in range(2):
     card = random.choice(cards_deck)
 
@@ -83,7 +69,6 @@ for i in range(2):
     p2_cards.append(card)
     p2_total += value
 
-# Player 2 turn loop
 while True:
     print("Player 2 cards:", p2_cards)
     print("Total:", p2_total)
@@ -115,10 +100,6 @@ while True:
     p2_cards.append(card)
     p2_total += value
 
-
-# =====================
-# WINNER DECISION
-# =====================
 print("\n🏁 Final Result")
 
 if p1_disqualified and not p2_disqualified:
