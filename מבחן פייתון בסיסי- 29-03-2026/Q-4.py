@@ -13,9 +13,9 @@ new_list = list1
 set1 = set(new_list)
 
 if len(set1) < len(new_list):
-    print("there is a duplicate")
+    print("There were duplicate")
 elif len(set1) == len(new_list):
-    print("there is no a duplicate")
+    print("There were duplicate")
 
 
 

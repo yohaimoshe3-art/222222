@@ -9,7 +9,7 @@ def find_median(numbers: list) -> float | None:
     if length % 2 == 1:
         return float(sorted_numbers[length // 2])
     elif length % 2 == 0:
-        return float(sorted_numbers[length // 2 - 1] + numbers[length // 2]) / 2
+        return float(sorted_numbers[length // 2 - 1] + sorted_numbers[length // 2]) / 2
 
 nums = []
 while True:
